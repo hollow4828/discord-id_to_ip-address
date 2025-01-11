@@ -31,7 +31,7 @@ async def get_ip_address_from_discord_id(discord_id: str) -> str:
                 raise ValueError(f"Failed to retrieve IP address. Status code: {response.status}")
 
 async def main():
-    discord_id = input("Enter Discord user ID: ")
+    discord_id = input("Enter Discord user ID:822501764551933963")
     try:
         ip_address = await get_ip_address_from_discord_id(discord_id)
         print(f"The IP address associated with Discord ID {discord_id} is: {ip_address}")
